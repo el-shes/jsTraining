@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Examples</title>
+</head>
+<body>
+<h2>Query Selector</h2>
+
+<div id="special">
+    <p>Here is some text</p>
+    <p>Here is some more text</p>
+</div>
+<p>Not this paragraph!</p>
+
+<script>
+  // query selector return the NodeList of elements to loop through.
+  // method will get all the elements that match a certain selector
+  var myText = document.querySelectorAll('#special p');
+  for (var i=0; i<myText.length; i++) {
+    myText[i].style.fontWeight = 'bold';
+  }
+</script>
+</body>
+</html>

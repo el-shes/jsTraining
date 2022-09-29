@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Scope</title>
+</head>
+<body>
+<h1>Scope in JS</h1>
+
+<script>
+    var aVariable = 'this is global';
+
+    function testScope() {
+      // if you forget var - variable is global scope!!!!
+      var aVariable = 'this is local';
+      console.log(aVariable);
+    }
+    testScope();
+
+    console.log(aVariable);
+</script>
+
+</body>
+</html>

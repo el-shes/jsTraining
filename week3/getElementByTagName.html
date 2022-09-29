@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Examples</title>
+</head>
+<body>
+
+<p>Here is some text</p>
+<p>Here is some more text</p>
+<p>Here is even more text</p>
+
+<script>
+  var myText = document.getElementsByTagName("p");
+  console.log(myText);
+
+  // alert() method
+  for (var i=0; i<myText.length; i++) {
+    myText[i].style.color = 'red';
+    alert(`showing paragraph ${i}`);
+  }
+</script>
+
+</body>
+</html>

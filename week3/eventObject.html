@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Events</title>
+</head>
+<body>
+<button>Don't Press Me!</button>
+<button>I'm fine</button>
+
+<script>
+
+    var btn = document.querySelector('button');
+
+    btn.addEventListener('click', function (event){
+      event.target.style.backgroundColor = 'red';
+      alert("Oh no you didn't");
+    });
+</script>
+</body>
+</html>

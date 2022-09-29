@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Examples</title>
+</head>
+<body>
+<h2>Inner HTML</h2>
+
+<div id="special">
+    <p>Here is some text</p>
+    <p>Here is some more text</p>
+</div>
+
+<script>
+  //property to change the html inside any element on a web page
+
+  var myDiv = document.getElementById('special');
+  myDiv.innerHTML = "<p>I love cheese </p>";
+</script>
+</body>
+</html>

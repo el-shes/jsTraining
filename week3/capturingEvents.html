@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Events</title>
+</head>
+<body>
+<h1>JavaScript Events</h1>
+<button>Don't Press Me!</button>
+<button id="listener">Try me ;)</button>
+<button class="common">The common button</button>
+
+<script>
+  var btn = document.querySelector('button');
+
+  function ouch() {
+    alert("oh no you didn't!");
+  }
+
+  btn.onclick = ouch;
+
+  // or in other way - addEventListener
+  var btn2 = document.getElementById('listener');
+
+  function youTried() {
+    alert("Yay! Here I am;)");
+  }
+
+  btn2.addEventListener('click', youTried);
+
+  // the most common syntax
+  var btn3 = document.getElementsByClassName('common');
+  btn.addEventListener('click', mostCommon()
+  {
+    alert('You have discovered it. Good luck');
+  });
+
+</script>
+</body>
+</html>

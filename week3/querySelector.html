@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Examples</title>
+</head>
+<body>
+<h2>Query Selector</h2>
+
+<div id="special">
+    <p class="cheese">Here is some text</p>
+    <p class="cheese">Here is some more text</p>
+</div>
+
+<script>
+  // query selector return the first match of the query
+    var myText = document.querySelector('#special .cheese');
+    myText.style.fontSize = '24px';
+    myText.style.color = 'red';
+</script>
+</body>
+</html>

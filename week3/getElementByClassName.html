@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Examples</title>
+</head>
+<body>
+
+<p class="blue">Here is some text</p>
+<p>Here is some more text</p>
+<p class="blue">Here is even more text</p>
+
+<script>
+  var myText = document.getElementsByClassName('blue');
+
+  for (var i=0; i<myText.length; i++) {
+    myText[i].style.color = 'blue';
+  }
+</script>
+
+</body>
+</html>
