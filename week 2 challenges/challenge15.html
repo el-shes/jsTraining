@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Basic Challenges: Challenge 15</title>
+</head>
+<body>
+<h1>JavaScript Basic Challenges</h1>
+<h2>Challenge 15</h2>
+<script>
+  var foods = ['cheese', 'tomato', 'nuts', 'mushrooms']
+
+  var yourName = prompt("provide your name", "");
+
+  function hello(name) {
+    var greeting;
+    if (name == null || name === "") {
+      greeting = `You didn't give me your name`;
+    } else {
+      greeting = `Hello ${name}, and welcome!`;
+    }
+    return greeting;
+  }
+
+  function hospitality(name, gift) {
+    console.log(hello(name));
+    for (food of gift) {
+      console.log(`${name}, would you like some ${food}?`);
+    }
+  }
+  hospitality(yourName, foods);
+</script>
+</body>
+</html>
