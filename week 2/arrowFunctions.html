@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Functions</title>
+</head>
+<body>
+<h2>Examples of Arrow Functions</h2>
+<script>
+  var greeting = 'Hello, and good morning';
+
+  function capitalizeFunction(anyString) {
+    anyString = anyString.toUpperCase();
+    return anyString;
+  }
+
+  var capitilizeExpression = function (anyString) {
+    anyString = anyString.toUpperCase();
+    return anyString;
+  }
+
+  var capitilizeArrow = anyString => anyString.toUpperCase();
+
+  console.log(capitilizeExpression(greeting));
+  console.log(capitalizeFunction(greeting));
+  console.log(capitilizeArrow(greeting));
+
+</script>
+
+</body>
+</html>

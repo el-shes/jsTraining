@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For</title>
+</head>
+<body>
+
+<h2>The For .. Of Loop</h2>
+
+<script>
+    var food = ['grapes', 'cheese', 'bread', 'olives']
+
+    // special loop for arrays
+    for (var eachItem of food){
+      console.log(eachItem);
+      console.log(eachItem.length);
+    }
+
+    // strings as arrays also
+    // loops produce the same result
+    var statement = 'A string can be treated like an array'
+
+    for (var i=0; i<statement.length; i++){
+      console.log(statement[i]);
+    }
+
+    for (var eachLetter of statement){
+      console.log(eachLetter)
+    }
+</script>
+
+</body>
+</html>

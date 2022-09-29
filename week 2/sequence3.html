@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food</title>
+</head>
+<body>
+
+<h2>Working with loops</h2>
+
+    <script>
+        food = ['salami', 'cheese', 'olive', 'mushroom']
+
+        var myString = 'I am really hungry for some';
+
+        for (item of food) {
+          console.log(`${myString} ${item}`);
+        }
+
+        // other way
+
+        for (var i=0; i<food.length; i++) {
+          console.log(`${myString} ${food[i]}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's &&?</title>
+</head>
+<body>
+
+<h2> How is your day?</h2>
+
+<script>
+  // && to check if both statement are TRUE - And
+
+  var goodMood = false;
+  var gotSleep = false;
+
+  if (goodMood && gotSleep) {
+    console.log('today is a good day!');
+  } else {
+    console.log('I am grumpy :(');
+  }
+
+  // || to check if any of the statements are true - Or
+
+  var gotBreakfast = false;
+  var gotLunch = false;
+  var gotDinner = false;
+
+  if (gotBreakfast || gotLunch || gotDinner) {
+    console.log("I am not starving");
+  } else {
+    console.log('Starving!!!! Feed me');
+  }
+
+</script>
+
+</body>
+</html>

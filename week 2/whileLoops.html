@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While</title>
+</head>
+<body>
+
+<h2>While loops</h2>
+
+<script>
+    var incrementor = 0;
+    var text = '';
+
+    while (incrementor < 10) {
+      text += 'The incrementor has gone up to ' + incrementor + '\n';
+      incrementor ++;
+    }
+
+    console.log(text);
+
+    // example of template literals - with tilda `
+    var increm = 0;
+    var txt = '';
+
+    while (increm < 11) {
+      txt += `The incrementor has gone up to ${increm} \n`;
+      increm ++;
+    }
+
+    console.log(txt)
+
+    // another example
+    var i = 0;
+    var nText = "";
+
+    while (i < 4) {
+      nText += `The incrementor is ${i}, and squared it is ${i * i} \n`;
+      i ++;
+    }
+
+    console.log(nText)
+
+</script>
+
+</body>
+</html>

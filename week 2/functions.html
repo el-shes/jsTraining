@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+<h2>Reusable Set of instructions</h2>
+
+<script>
+    function doStuff() {
+      var myString = 'here is a message';
+      var upperString = myString.toUpperCase();
+      console.log(myString);
+      console.log(upperString);
+    }
+
+    doStuff();
+
+    function numberChecker() {
+      var userNum = prompt("Enter a whole number:", "");
+
+      if (userNum < 10) {
+        console.log('You entered a number less than 10');
+        for (var i=0; i<10; i++) {
+          console.log(`Here is a ${i}`);
+        }
+      }else if (userNum > 9) {
+        console.log('You entered a big number');
+      } else {
+        console.log("ERROR: you didn't enter a number");
+      }
+    }
+    numberChecker();
+</script>
+
+</body>
+</html>

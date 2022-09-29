@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generating random number</title>
+</head>
+<body>
+<h2> Creating random Int</h2>
+<script>
+  var food = ['cheese', 'mushrooms', 'olives', 'bell pepper']
+
+    function randomInt(min, max) {
+      var numOfValues = max - min + 1;
+      var randomNum = Math.random();
+      var rundomVal = randomNum * numOfValues;
+      var roundedRandomVal = Math.floor(rundomVal);
+
+      return min + roundedRandomVal;
+
+      // or in other way it can be refactored to:
+      // return Math.floor( (max - min + 1) * Math.random()) + min;
+    }
+    console.log(food[randomInt(0, 3)]);
+
+</script>
+</body>
+</html>
