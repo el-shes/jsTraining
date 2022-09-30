@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Challenges</title>
+</head>
+<body>
+<h2>Article Title</h2>
+
+<p>Today's Date</p>
+
+<p>
+  Lorem ipsum dolor sit amet. consectetur adipisicing elit.
+  Libero enim voluptatem recusandae, magni nesciunt quia tenetur doloribus labore
+  eos sed quos impedit debitis adipisci, optio neque, molestiae placeat quisquam nisi?
+</p>
+
+<blockquote>
+  "You're braver than you believe, and stronger than you seem, and smarter than you think."
+  <footer>--A.A.Milne</footer>
+</blockquote>
+
+<p>
+  Lorem ipsum dolor sit amet, consecteur adipisicing elit.
+  Incidunt eum eos, modi ilum nisi quas. Repellendus odit impedit est ab omnis,
+  reiciendis explicabo, amet error, harum officiis vitae quae icidunt!
+</p>
+
+<p id="copyright">copyright info</p>
+
+<script>
+  var allPs = document.getElementsByTagName("p")
+  for (var ps of allPs) {
+    ps.style.color = 'green';
+  }
+</script>
+</body>
+</html>

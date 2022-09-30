@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Challenges</title>
+    <style>
+
+        body {
+            font-family: Arial, serif;
+            line-height: 1.5em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 2em;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        article {
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Page Title</h1>
+<p>Some basic information about this page.</p>
+
+<h2>Article Title</h2>
+
+<p class="date">Today's Date</p>
+
+<p>
+    Lorem ipsum dolor sit amet. consectetur adipisicing elit.
+    Libero enim voluptatem recusandae, magni nesciunt quia tenetur doloribus labore
+    eos sed quos impedit debitis adipisci, optio neque, molestiae placeat quisquam nisi?
+</p>
+
+<blockquote>
+    "You're braver than you believe, and stronger than you seem, and smarter than you think."
+    <footer>--A.A.Milne</footer>
+</blockquote>
+
+<p>
+    Lorem ipsum dolor sit amet, consecteur adipisicing elit.
+    Incidunt eum eos, modi ilum nisi quas. Repellendus odit impedit est ab omnis,
+    reiciendis explicabo, amet error, harum officiis vitae quae icidunt!
+</p>
+
+<p id="copyright">copyright info</p>
+
+<script>
+  var mainHeading = document.querySelector('h1');
+  mainHeading.className = 'red';
+
+  var datePs = document.getElementsByClassName('date');
+  datePs[0].className = 'red';
+
+</script>
+</body>
+</html>

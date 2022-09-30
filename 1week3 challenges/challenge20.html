@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:http="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Challenges</title>
+    <style>
+
+        body {
+            font-family: Arial, serif;
+            line-height: 1.5em;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 2em;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        article {
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Article Title</h1>
+<p class="date">Today's Date</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi ullam
+    voluptatem porro officiis culpa impedit nobis provident veniam deserunt quas velit
+    perspiciatis ipsa dignissimos ab est, quo consequuntur magnam?
+</p>
+
+<blockquote>
+    "You're off to great places, today is your day. Your mountain is waiting, so get on your way."
+    <footer>--Dr. Seuss</footer>
+</blockquote>
+
+<p>
+    <img src="http://meadpoint.net/images/sillyajax.jpg" alt="Ajax">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, dolor? Quod minima
+    voluptatem at optio provident, quam porro ut impedit officia, consectetur minus eaque cumque
+    voluptates, mollitia beatae necessitatibus.
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus culpa a sunt dolor tempora
+    mollitia. Quod illum ea, non, ducimus nobis, nesciunt praesentium qui modi, commodi sapiente
+    alias fugiat unde!
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quos corrupti quia sit error omnis
+    provident nobis numquam quo magni nesciunt deserunt quidem, deleniti voluptatibus nostrum possimus,
+    obcaecati incidunt unde.
+</p>
+
+<h2>Article Title</h2>
+<p class="date">Today's Date</p>
+
+<p>
+    Lorem ipsum dolor sit amet. consectetur adipisicing elit.
+    Libero enim voluptatem recusandae, magni nesciunt quia tenetur doloribus labore
+    eos sed quos impedit debitis adipisci, optio neque, molestiae placeat quisquam nisi?
+</p>
+
+<blockquote>
+    "You're braver than you believe, and stronger than you seem, and smarter than you think."
+    <footer>--A.A.Milne</footer>
+</blockquote>
+
+<p>
+    Lorem ipsum dolor sit amet, consecteur adipisicing elit.
+    Incidunt eum eos, modi ilum nisi quas. Repellendus odit impedit est ab omnis,
+    reiciendis explicabo, amet error, harum officiis vitae quae icidunt!
+</p>
+
+<p id="copyright">copyright info</p>
+
+<script>
+    var img = document.querySelector('img');
+    img.setAttribute('scr', 'http://meadpoint.net/images/xmasajax.jpg');
+
+    var secondArticlePs = document.querySelectorAll('p');
+    for (var i=0; i<secondArticlePs.length; i++){
+      secondArticlePs[i].className = 'blue';
+    }
+</script>
+</body>
+</html>
