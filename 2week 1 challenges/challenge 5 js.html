@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Challenge 5</title>
+
+</head>
+<body>
+<p>Don't change this paragraph</p>
+
+<div id="main">
+    <p>don't change this paragraph.</p>
+    <p>don't change this paragraph.</p>
+    <p>Change this last paragraph.</p>
+</div>
+
+<script>
+    const lastP = document.querySelector('#main p:last-of-type');
+    lastP.style.color = 'red';
+    lastP.style.fontSize = '23px';
+</script>
+</body>
+</html>
