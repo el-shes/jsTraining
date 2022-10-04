@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Challenge 17</title>
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Link one</a></li>
+        <li><a href="#">Link two</a></li>
+        <li><a href="#">Link three</a></li>
+        <li><a href="#">Link four</a></li>
+        <li><a href="#">Link five</a></li>
+    </ul>
+</nav>
+
+<p id="paragraph">Click a link to change this paragraph</p>
+
+<script>
+  const navLink = document.querySelectorAll('nav ul li a');
+  for (let i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener('click', function () {
+      const thisLink = this.innerHTML;
+      document.getElementById('paragraph').innerHTML = `You clicked ${thisLink}`;
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ Challenge 18</title>
+    <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Link one</a></li>
+        <li><a href="#">Link two</a></li>
+        <li><a href="#">Link three</a></li>
+        <li><a href="#">Link four</a></li>
+        <li><a href="#">Link five</a></li>
+    </ul>
+</nav>
+
+<p id="paragraph">Click a link to change this paragraph</p>
+
+<script>
+  $('nav ul li a').click(function () {
+    const thisLink = $(this).html();
+    $('#paragraph').html(`You clicked ${thisLink}`);
+  });
+</script>
+</body>
+</html>
