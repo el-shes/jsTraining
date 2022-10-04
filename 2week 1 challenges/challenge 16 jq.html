@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ Challenge 16</title>
+    <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Link one</a></li>
+        <li><a href="#">Link two</a></li>
+        <li><a href="#">Link three</a></li>
+        <li><a href="#">Link four</a></li>
+        <li><a href="#">Link five</a></li>
+    </ul>
+</nav>
+
+<p>Here is a paragraph with a <a href="http://google.com">link to google</a> it</p>
+
+<script>
+  $('nav ul li a').click(function () {
+    $(this).css('color', 'red');
+  });
+</script>
+</body>
+</html>
