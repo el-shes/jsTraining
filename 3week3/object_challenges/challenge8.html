@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 8</title>
+</head>
+<body>
+<form id="addpet">
+    <p><label>Name <input type="text" id="name"></label></p>
+    <p><label>Species <input type="text" id="species"></label></p>
+    <p><label>Greeting <input type="text" id="greeting"></label></p>
+    <p><input type="submit" value="add pet"></p>
+</form>
+<script>
+  function Pet(name, species, greeting) {
+    this.name = name;
+    this.species = species;
+    this.greeting = function () {
+      alert(greeting)
+    };
+  }
+  document.getElementById('addpet').addEventListener('submit', function (event){
+    event.preventDefault();
+    const formData = event.target.elements;
+    const myPet = new Pet(formData[0].value, formData[1].value, formData[2].value);
+
+    console.log(myPet);
+    myPet.greeting();
+  })
+</script>
+</body>
+</html>

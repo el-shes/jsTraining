@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 6</title>
+</head>
+<body>
+<script>
+  function Pet (name, species, greeting){
+    this.name = name;
+    this.species = species;
+    this.greeting = function (){alert(greeting)};
+  }
+
+  const myDog = new Pet('Jack', 'dog', 'woof woof');
+  const myCat = new Pet('Fluf', 'cat', 'meow');
+
+  myDog.greeting();
+  myCat.greeting();
+</script>
+</body>
+</html>
